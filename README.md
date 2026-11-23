@@ -25,3 +25,9 @@ This project revolves around the acquisition and analysis of data using RTK (Rea
 6. **Repository Structure**: I've organized my GitHub repository to ensure ease of access and clarity. The structure includes separate directories for ROS drivers, data analysis scripts, and the final report.
 
 By the end of this project, I gained profound insights into the workings of RTK GNSS systems, understanding both their potential and the challenges they present in real-world navigation scenarios.
+
+## Reproduce the analysis
+
+Browse the [recorded bags and CSVs](src/data) for stationary and moving trials in open and occluded conditions. The [analysis directory](src/gps_driver/analysis) has scripts, plots, and the experiment report. Check script input paths against the trial files before running.
+
+For live collection from a built ROS 1 catkin workspace, launch with `roslaunch gps_driver driver.launch port:=/dev/ttyUSB0` using the actual receiver port.
