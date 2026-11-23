@@ -31,3 +31,7 @@ By the end of this project, I gained profound insights into the workings of RTK 
 Browse the [recorded bags and CSVs](src/data) for stationary and moving trials in open and occluded conditions. The [analysis directory](src/gps_driver/analysis) has scripts, plots, and the experiment report. Check script input paths against the trial files before running.
 
 For live collection from a built ROS 1 catkin workspace, launch with `roslaunch gps_driver driver.launch port:=/dev/ttyUSB0` using the actual receiver port.
+
+## Compare the four trials
+
+Use the stationary open, stationary occluded, moving open, and moving occluded recordings in `src/data/`. Each trial directory contains an exported GPS CSV alongside its recording. Check the corresponding plotting script under `src/gps_driver/analysis/` and use the report and saved plots as a comparison point. Keep the environment label with each output figure.
